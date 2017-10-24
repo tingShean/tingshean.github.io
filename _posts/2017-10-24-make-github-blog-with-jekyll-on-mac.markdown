@@ -7,6 +7,7 @@ categories: blog
 ---
 網路上已經有很多jekyll的各類教學，這邊主要是記錄在安裝上遇到的一些問題.
 
+
 因為使用的平台是Mac OS，所以跟linux的安裝還是有些許的不同，我在執行`$gem install jekyll`時就有遇到問題
 
 
@@ -16,6 +17,7 @@ Fetching: public_suffix-3.0.0.gem (100%)
 ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
 {% endhighlight %}
+
 
 看上去是權限的問題，所以我就直接加上`sudo`，接著直接回我:
 
@@ -33,6 +35,7 @@ ERROR:  Error installing jekyll:
 
 但是現實是很殘酷的，該出錯的地方就是會錯，工程師本命就是在解決問題，自然也會吸引一堆問題(x)
 
+
 當`jekyll`裝好後要啟動的時候就出現問題:
 
 {% highlight ruby %}
@@ -44,6 +47,7 @@ $ jekyll serve
 	from /usr/local/bin/jekyll:23:in `load'
 	from /usr/local/bin/jekyll:23:in `<main>'
 {% endhighlight %}
+
 
 ok，果不其然，事情就是這樣發生了，還好也有人發生類似的問題，一樣要用gem安裝bundler:
 
