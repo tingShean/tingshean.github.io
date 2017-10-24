@@ -2,11 +2,13 @@
 layout: post
 title:  "[Mac]使用jekyll製作github blog"
 date:   2017-10-24 12:28:00 +0800
-categories: jekyll update
+categories: blo
+
 ---
 網路上已經有很多jekyll的各類教學，這邊主要是記錄在安裝上遇到的一些問題.
 
-因為使用的平台是Mac OS，所以跟linux的安裝還是有些許的不同，我在執行`$gem install jekyll`時就有遇到問題:
+因為使用的平台是Mac OS，所以跟linux的安裝還是有些許的不同，我在執行`$gem install jekyll`時就有遇到問題
+
 
 {% highlight ruby %}
 ~/Documents/work » gem install jekyll
@@ -23,11 +25,14 @@ ERROR:  Error installing jekyll:
 	public_suffix requires Ruby version >= 2.1.
 {% endhighlight %}
 
-好的，看來內建的版本沒辦法直接安裝，在這邊我就直接下`brew install ruby`.
+好的，看來內建的版本沒辦法直接安裝，在這邊我就直接下`brew install ruby`
+
 因為下了`brew upgrade ruby`直接回我沒有安裝(?!)，不過這邊應該是指我個人用戶下沒有這個東西.
 
-該裝的都裝好，總該沒問題了吧？.
-但是現實是很殘酷的，該出錯的地方就是會錯，工程師本命就是在解決問題，自然也會吸引一堆問題(x).
+該裝的都裝好，總該沒問題了吧？
+
+但是現實是很殘酷的，該出錯的地方就是會錯，工程師本命就是在解決問題，自然也會吸引一堆問題(x)
+
 當`jekyll`裝好後要啟動的時候就出現問題:
 
 {% highlight ruby %}
@@ -63,6 +68,7 @@ $ bundle exec jekyll serv
 {% endhighlight %}
 
 [Jekyll運行問題出處][jekyll-git]
+
 [Jekyll安裝參考網站][jekyll-url]
 
 [jekyll-git]: https://github.com/jekyll/jekyll/issues/5165
