@@ -22,18 +22,44 @@ ERROR:  Error installing jekyll:
 {% endhighlight %}
 
 好的，看來內建的版本沒辦法直接安裝，在這邊我就直接下`brew install ruby`
+因為下了`brew upgrade ruby`直接回我沒有安裝(?!)，不過這邊應該是指我個人用戶下沒有這個東西
 
-
+該裝的都裝好，總該沒問題了吧？
+但是現實是很殘酷的，該出錯的地方就是會錯，工程師本命就是在解決問題，自然也會吸引一堆問題(x)
+當`jekyll`裝好後要啟動的時候就出現問題
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+$ jekyll serve
+/usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/lib/jekyll/plugin_manager.rb:48:in `require_from_bundler'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/jekyll-3.6.2/exe/jekyll:11:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+ok，果不其然，事情就是這樣發生了，還好也有人發生類似的問題，一樣要用gem安裝bundler
+{% highlight ruby %}
+$ sudo gem install bundler
+{% endhighlight %}
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+{% highlight ruby %}
+# 這個執行完會問密碼
+$ bundle install
+Password: 
+Installing jekyll-feed 0.9.2
+Fetching minima 2.1.1
+Installing minima 2.1.1
+Bundle complete! 4 Gemfile dependencies, 22 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+{% endhighlight %}
+
+最後就是啟動啦
+{% highlight ruby %}
+$ bundle exec jekyll serv
+{% endhighlight %}
+
+[Jekyll運行問題出處][jekyll-git]
+[Jekyll安裝參考網站][jekyll-url]
+
+[jekyll-git]: https://github.com/jekyll/jekyll/issues/5165
+[jekyll-url]: http://seans.tw/2016/make-own-blog-with-jekyll-and-github-page/
