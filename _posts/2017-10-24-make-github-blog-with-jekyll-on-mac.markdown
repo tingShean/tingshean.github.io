@@ -2,7 +2,7 @@
 layout: post
 title:  "[Mac]使用jekyll製作github blog"
 date:   2017-10-24 12:28:00 +0800
-categories: blo
+categories: blog
 
 ---
 網路上已經有很多jekyll的各類教學，這邊主要是記錄在安裝上遇到的一些問題.
