@@ -11,7 +11,7 @@ categories: blog
 因為使用的平台是Mac OS，所以跟linux的安裝還是有些許的不同，我在執行`$gem install jekyll`時就有遇到問題
 
 
-{% highlight ruby %}
+{% highlight shell %}
 ~/Documents/work » gem install jekyll
 Fetching: public_suffix-3.0.0.gem (100%)
 ERROR:  While executing gem ... (Gem::FilePermissionError)
@@ -21,7 +21,7 @@ ERROR:  While executing gem ... (Gem::FilePermissionError)
 
 看上去是權限的問題，所以我就直接加上`sudo`，接著直接回我:
 
-{% highlight ruby %}
+{% highlight shell %}
 Fetching: public_suffix-3.0.0.gem (100%)
 ERROR:  Error installing jekyll:
 	public_suffix requires Ruby version >= 2.1.
@@ -38,7 +38,7 @@ ERROR:  Error installing jekyll:
 
 當`jekyll`裝好後要啟動的時候就出現問題:
 
-{% highlight ruby %}
+{% highlight shell %}
 $ jekyll serve
 /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
 	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
@@ -51,11 +51,11 @@ $ jekyll serve
 
 ok，果不其然，事情就是這樣發生了，還好也有人發生類似的問題，一樣要用gem安裝bundler:
 
-{% highlight ruby %}
+{% highlight shell%}
 $ sudo gem install bundler
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight shell %}
 # 這個執行完會問密碼
 $ bundle install
 Password: 
@@ -67,7 +67,7 @@ Use `bundle info [gemname]` to see where a bundled gem is installed.
 {% endhighlight %}
 
 最後就是啟動啦
-{% highlight ruby %}
+{% highlight shell %}
 $ bundle exec jekyll serv
 {% endhighlight %}
 
