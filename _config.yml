@@ -7,7 +7,7 @@
 
 ## Base settings ##
 # url:  # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl: '/'
+baseurl: 'https://tingshean.github.io/'
 title: 范特西的電子看板
 description: > #this means to ignore newlines until "nav_lists:"
   Fantasy's Blog
