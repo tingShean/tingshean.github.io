@@ -17,8 +17,8 @@ nav_lists:
     url: /blog/about.html
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-# repository: e.g. someone.github.io
-# repository_tree: e.g. master
+repository: tingshung.github.io # e.g. someone.github.io
+repository_tree: master # e.g. master
 
 ## Language & timezone ##
 lang: zh #the language of your site
