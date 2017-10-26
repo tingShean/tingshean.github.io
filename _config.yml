@@ -12,13 +12,9 @@ title: 范特西的電子看板
 description: > #this means to ignore newlines until "nav_lists:"
   Fantasy's Blog
 
-blog:
-  baseurl: "/blog"
-  title: Fantasy's blog
-  description: Fantasy's Blog
-  nav_lists:
-    - title: About
-      url: /blog/about.html
+nav_lists:
+  - title: About
+    url: /blog/about.html
 
 ## GitHub repository (if the site is hosted by GitHub) ##
 # repository: e.g. someone.github.io
