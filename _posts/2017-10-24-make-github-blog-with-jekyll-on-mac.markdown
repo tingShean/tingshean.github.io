@@ -10,7 +10,7 @@ tags: mac github.io jekyll
 
 因為使用的平台是Mac OS，所以跟linux的安裝還是有些許的不同，我在執行`$gem install jekyll`時就有遇到問題
 
-
+<!--more-->
 {% highlight shell %}
 ~/Documents/work » gem install jekyll
 Fetching: public_suffix-3.0.0.gem (100%)
