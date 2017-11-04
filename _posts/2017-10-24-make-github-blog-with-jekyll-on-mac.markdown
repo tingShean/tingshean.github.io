@@ -18,7 +18,7 @@ ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
 {% endhighlight %}
 
-`<!--more-->`
+<!--more-->
 
 
 看上去是權限的問題，所以我就直接加上`sudo`，接著直接回我:
