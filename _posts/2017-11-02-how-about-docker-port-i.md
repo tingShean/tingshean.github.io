@@ -11,7 +11,8 @@ tags: docker blog
 
 一個docker container運行的成功與否除了最直接的看到期望運作的內容，我們可以運用幾個內建的功能
 
-`<!--more-->`
+<!--more-->
+
 `$ docker run -ti --rm --name <container_name> <images> env`
 
 `$ docker run -ti --rm --name <container_name> <images> /bin/bash`
