@@ -20,6 +20,7 @@ nginx: [emerg] BIO_new_file("/etc/letsencrypt/live/yourdomain.com/fullchain.pem"
 {% endhighlight %}
 
 <!--more-->
+(黑人問號)
 
 這邊不管怎麼把實體位置掛上去，都會產生這個問題，就算是把權限群組改掉以及更換權限(read only)
 
@@ -30,15 +31,17 @@ nginx: [emerg] BIO_new_file("/etc/letsencrypt/live/yourdomain.com/fullchain.pem"
 
 後來我直接把產好的key放到我想要的目錄，並掛載上去，就解決了...(滿滿的黑人問號)
 
+雖然我知道是目錄權限的問題，不過對於網路上的教學文章還真的是諸多疑問
+
 
 以下是我的做法
 
 1. 先把產好的key cp到我要的目錄位置
 
 {% highlight shell %}
-fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/chain.pem /etc/nginx/wingtea.arsongdev.com/
-fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/fullchain.pem /etc/nginx/wingtea.arsongdev.com/
-fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/privkey.pem /etc/nginx/wingtea.arsongdev.com/
+fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/chain.pem /etc/nginx/yourdomain.com/
+fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/fullchain.pem /etc/nginx/yourdomain.com/
+fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/privkey.pem /etc/nginx/yourdomain.com/
 {% endhighlight %}
 
 2. 修改要掛載的位置並對應到nginx config
@@ -47,9 +50,9 @@ fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/privk
 
 {% highlight crontab %}
 30 2 * * 1 /usr/bin/certbot renew  >> /var/log/le-renew.log
-30 2 * * 1 /usr/bin/cp /etc/letsencrypt/live/wingtea.arsongdev.com/chain.pem /etc/nginx/wingtea.arsongdev.com/
-30 2 * * 1 /usr/bin/cp /etc/letsencrypt/live/wingtea.arsongdev.com/fullchain.pem /etc/nginx/wingtea.arsongdev.com/
-30 2 * * 1 /usr/bin/cp /etc/letsencrypt/live/wingtea.arsongdev.com/privkey.pem /etc/nginx/wingtea.arsongdev.com/
+30 2 * * 1 /usr/bin/cp /etc/letsencrypt/live/yourdomain.com/chain.pem /etc/nginx/yourdomain.com/
+30 2 * * 1 /usr/bin/cp /etc/letsencrypt/live/yourdomain.com/fullchain.pem /etc/nginx/yourdomain.com/
+30 2 * * 1 /usr/bin/cp /etc/letsencrypt/live/yourdomain.com/privkey.pem /etc/nginx/yourdomain.com/
 {% endhighlight %}
 
 最後的步驟因為都要有root的權限才能從letsencrypt搬檔，所以就直接放在root的crontab囉
