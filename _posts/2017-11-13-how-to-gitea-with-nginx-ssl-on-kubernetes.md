@@ -26,9 +26,9 @@ nginx: [emerg] BIO_new_file("/etc/letsencrypt/live/yourdomain.com/fullchain.pem"
 本來一度想把產好的key包進image裡，不過想了想這樣手續更多，而且更費工
 
 
-後來我直接把產好的key放到我想要的目錄，並掛載上去，就解決了...?!
+而且網路上不管是哪國的教學都是跟你說直接在nginx的config裡設定好目錄，並把對應的目錄掛進docker就可以了...(黑人問號)
 
-網路上不管是哪國的教學都是跟你說直接在nginx的config裡設定好目錄，並把對應的目錄掛進docker就可以了...(黑人問號)
+後來我直接把產好的key放到我想要的目錄，並掛載上去，就解決了...(滿滿的黑人問號)
 
 
 以下是我的做法
@@ -58,7 +58,9 @@ fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/privk
 相關參考網站
 
 [Certbot官網][certbot-offical]
+
 [Gitea with Nginx Reverse Proxy][focaabys-note]
+
 [手把手教你在Nginx上使用CertBot][nginx-certbot]
 
 [certbot-offical]: https://certbot.eff.org/#ubuntuxenial-other
