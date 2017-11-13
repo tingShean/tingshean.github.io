@@ -39,9 +39,9 @@ nginx: [emerg] BIO_new_file("/etc/letsencrypt/live/yourdomain.com/fullchain.pem"
 1. 先把產好的key cp到我要的目錄位置
 
 {% highlight shell %}
-fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/chain.pem /etc/nginx/yourdomain.com/
-fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/fullchain.pem /etc/nginx/yourdomain.com/
-fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/wingtea.arsongdev.com/privkey.pem /etc/nginx/yourdomain.com/
+fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/yourdomain.com/chain.pem /etc/nginx/yourdomain.com/
+fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/yourdomain.com/fullchain.pem /etc/nginx/yourdomain.com/
+fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/yourdomain.com/privkey.pem /etc/nginx/yourdomain.com/
 {% endhighlight %}
 
 2. 修改要掛載的位置並對應到nginx config
