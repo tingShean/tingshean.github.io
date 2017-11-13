@@ -14,9 +14,12 @@ kubernetes運作的底層是docker，所以架構也是一樣
 
 我在這遇到的問題是使用certbot產生key了之後，把key掛載上去會一直出現
 
-`2017/11/12 10:25:49 [emerg] 9#9: BIO_new_file("/etc/letsencrypt/live/yourdomain.com/fullchain.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/yourdomain.com/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
-nginx: [emerg] BIO_new_file("/etc/letsencrypt/live/yourdomain.com/fullchain.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/yourdomain.com/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)`
+{% highlight shell %}
+2017/11/12 10:25:49 [emerg] 9#9: BIO_new_file("/etc/letsencrypt/live/yourdomain.com/fullchain.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/yourdomain.com/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+nginx: [emerg] BIO_new_file("/etc/letsencrypt/live/yourdomain.com/fullchain.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/yourdomain.com/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+{% endhighlight %}
 
+<!--more-->
 
 這邊不管怎麼把實體位置掛上去，都會產生這個問題，就算是把權限群組改掉以及更換權限(read only)
 
