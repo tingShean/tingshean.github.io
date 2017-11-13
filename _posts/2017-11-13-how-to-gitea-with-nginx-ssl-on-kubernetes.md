@@ -66,6 +66,9 @@ fantasy@ubuntu:~/kube$ sudo cp /etc/letsencrypt/live/yourdomain.com/privkey.pem 
 
 [手把手教你在Nginx上使用CertBot][nginx-certbot]
 
+[Gitea wiki][gitea-wiki]
+
 [certbot-offical]: https://certbot.eff.org/#ubuntuxenial-other
 [focaabys-note]: https://focaaby.github.io/2017/10/22/Gitea-with-Nginx-Reverse-Proxy/
 [nginx-certbot]: https://segmentfault.com/a/1190000005797776
+[gitea-wiki]: https://wiki.archlinux.org/index.php/Gitea
