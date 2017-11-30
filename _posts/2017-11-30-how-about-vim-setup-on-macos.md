@@ -8,7 +8,7 @@ tags: vim macos blog
 ---
 其實最近是因為在學習Golang，因為之前都是用sublime和GoLand這兩套IDE
 
-但用永了還是懷念vim，所以想說把Mac上的vim搞一搞
+但用久了還是懷念vim，所以想說把Mac上的vim搞一搞
 
 雖然當初好用的.vimrc沒有備份到，想說也趁這個機會好好的把相關的設定看一看
 
