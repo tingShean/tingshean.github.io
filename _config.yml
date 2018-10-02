@@ -17,11 +17,11 @@ nav_lists:
     url: /blog/about.html
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-repository: tingshung.github.io # e.g. someone.github.io
+repository: tingShean/tingshean.github.io # e.g. someone.github.io
 repository_tree: master # e.g. master
 
 ## Language & timezone ##
-lang: zh #the language of your site
+lang: zh-Hant #the language of your site
 timezone: Asia/Taipei
 
 ## Author & social ##
@@ -59,6 +59,7 @@ excerpt_separator: <!--more-->
 ## Build ##
 markdown: kramdown
 highlighter: rouge
+highlight_theme: tomorrow-night
 permalink: date
 
 ## Plugins ##
