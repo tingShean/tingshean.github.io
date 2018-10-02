@@ -1,4 +1,11 @@
-#[Python][學習]function? method?
+---
+layout: post
+title:  "[Python][學習]function? method?"
+date:   2018-09-27 20:00:00 +0800
+category: blog
+key: 20180927
+tags: python 
+---
 
 學東西就是要越學越深入，才會知道自己以前理解的觀點是對是錯，也可以慢慢了解設計者的想法以及定義。
 
