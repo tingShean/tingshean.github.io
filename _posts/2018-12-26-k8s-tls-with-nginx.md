@@ -18,21 +18,21 @@ tags: Kubernetes k8s nginx ssl tls
 
 <!--more-->
 ## Step 1 把TLS檔移到指定位置
-`
+{% highlight shell %}
 $ mv secret.crt ${CERT_FILE}
 $ mv secret.key ${KEY_FILE}
-`
+{% endhighlight %}
 
 ## Step 2 建立Secret
 {% highlight shell %}
-$ kubectl create secret <secret_name> ${CERT_NAME} --key ${KEY_FILE} --cert ${CERT_FILE} --namespace=${NAMESPACE}
+$ kubectl create secret ${SECRET_NAME} ${CERT_NAME} --key ${KEY_FILE} --cert ${CERT_FILE} --namespace=${NAMESPACE}
 {% endhighlight %}
 
 ## Step 3 nginx內加入
-`
-ssl_certificate /etc/nginx/ssl/<secret_name>.crt;
-ssl_certificate_key /etc/nginx/ssl/<secret_name>.key;
-`
+{% highlight config %}
+ssl_certificate /etc/nginx/ssl/${SECRET_NAME}.crt;
+ssl_certificate_key /etc/nginx/ssl/${SECRET_NAME}.key;
+{% endhighlight %}
 
 ## Step 4 K8s nginx yaml加上
 {% highlight yaml %}
