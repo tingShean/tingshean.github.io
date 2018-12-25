@@ -6,7 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 ## Base settings ##
-# url:  # the base hostname & protocol for your site e.g. https://www.someone.com
+text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+url: https://tingshung.github.io
 baseurl: '/'
 title: 范特西的電子看板
 description: > #this means to ignore newlines until "nav_lists:"
@@ -21,11 +23,12 @@ repository: tingShean/tingshean.github.io # e.g. someone.github.io
 repository_tree: master # e.g. master
 
 ## Language & timezone ##
-lang: zh-Hant #the language of your site
+lang: zh-TW #the language of your site
 timezone: Asia/Taipei
 
 ## Author & social ##
 author:
+  type: person
   name: tingshung
   email: tingshung@gmail.com #your Email address e.g. someone@site.com
   # facebook:  #your Facebook username
@@ -59,8 +62,38 @@ excerpt_separator: <!--more-->
 ## Build ##
 markdown: kramdown
 highlighter: rouge
-highlight_theme: tomorrow-night
 permalink: date
+
+exclude:
+  - CHANGELOG.md
+  - HOW_TO_RELEASE.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
+  - package.json
+  - /docs
+  - /node_modules
+  - /screenshots
+  - /test
+  - /vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+      sharing: true
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      pageview: true
 
 ## Plugins ##
 gems:
