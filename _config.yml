@@ -23,7 +23,7 @@ repository: tingShean/tingshean.github.io # e.g. someone.github.io
 repository_tree: master # e.g. master
 
 ## Language & timezone ##
-lang: zh-TW #the language of your site
+lang: zh-Hant #the language of your site
 timezone: Asia/Taipei
 
 ## Author & social ##
