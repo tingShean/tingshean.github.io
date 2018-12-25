@@ -1,8 +1,6 @@
 ---
-layout: post
+layout: article
 title:  "[IDE] vim setup on macos"
-date:   2017-11-30 22:00:00 +0800
-category: blog
 key: 20171130
 tags: vim macos blog 
 ---

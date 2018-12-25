@@ -1,8 +1,6 @@
 ---
-layout: post
+layout: article
 title:  "[Docker]粗略淺談 part I"
-date:   2017-11-02 22:58:00 +0800
-category: blog
 key: 20171102
 tags: docker blog 
 ---

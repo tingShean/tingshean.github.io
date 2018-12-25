@@ -1,8 +1,6 @@
 ---
-layout: post
+layout: article
 title:  "[Mac]使用jekyll製作github blog"
-date:   2017-10-24 12:28:00 +0800
-category: blog
 key: 20171024
 tags: mac github.io jekyll blog
 ---

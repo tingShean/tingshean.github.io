@@ -1,8 +1,6 @@
 ---
-layout: post
+layout: article
 title:  "[Docker]使用network"
-date:   2018-10-13 20:00:00 +0800
-category: blog
 key: 20181013
 tags: docker 
 ---

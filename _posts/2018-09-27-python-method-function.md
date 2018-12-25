@@ -1,8 +1,6 @@
 ---
-layout: post
+layout: article
 title:  "[Python][學習]function? method?"
-date:   2018-09-27 20:00:00 +0800
-category: blog
 key: 20180927
 tags: python 
 ---
