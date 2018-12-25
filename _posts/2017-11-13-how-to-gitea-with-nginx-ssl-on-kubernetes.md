@@ -1,8 +1,6 @@
 ---
-title:  "[Kubernetes]gitea+Nginx+certbot"
+title: [Kubernetes]gitea+Nginx+certbot
 tags: kubernetes kubectl gitea nginx ssl certbot blog 
-article_header:
-    type: cover
 ---
 記錄一下遇過的問題以及解決的方法，如果還沒辦法成功的透過nginx當入口，不建議直接看這篇
 
