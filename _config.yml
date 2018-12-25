@@ -107,3 +107,10 @@ server_url: "0.0.0.0"
 
 ## Development ##
 isdebug: false
+
+## Path ##
+paths:
+  root    : /blog
+  home    : /blog
+  archive : /blog/archive.html
+  rss     : /feed.xml
