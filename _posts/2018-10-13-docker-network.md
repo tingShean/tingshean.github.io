@@ -15,6 +15,7 @@ tags: docker
 
 後來玩了一下發現這個做法跟k8s的cluster有些類似，在啟動任何image之前，先讓docker建立自己的network，然後在把image掛在這個network底下就可以
 
+<!--more-->
 ## step 1
 建立docker network
 
