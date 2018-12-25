@@ -15,7 +15,7 @@ key: page-about
 	* [網址](https://www.koodata.com.tw/)
 	* 2017-10-03 ~ 至今
 	    * 工作簡介
-	    * 開發Kooads web server, Vivido 管理後台
+	    * 開發Kooads web server, Vivido 管理後台, 改善部署金流伺服器
 	    * 導入Docker以及Kubernetes
 	    * 使用Google Sources Repositories(GSR) Build Front-end and Back-end Dockerfile
 	    * 規劃部署GCP伺服器(CI/CD use Google Cloud Build)
