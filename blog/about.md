@@ -15,7 +15,7 @@ key: page-about
 	* [網址](https://www.koodata.com.tw/)
 	* 2017-10-03 ~ 至今
 	
-	##### 工作簡介
+	#### 工作簡介
 	    - 開發Kooads web server, Vivido 管理後台
 	    - 導入Docker以及Kubernetes
 	    - 使用Google Sources Repositories(GSR) Build Front-end and Back-end Dockerfile
@@ -26,7 +26,7 @@ key: page-about
 	* [網址](https://www.wogogo.com/)
 	* 2016-11-15 ~ 2017-08-25
 	
-	#### 工作簡介
+	### 工作簡介
 	    - 開發網站(web server)以及管理後台(server)
     	- 導入Docker以及自動化git
     	- Build Front-end and Back-end Dockerfile
@@ -37,7 +37,7 @@ key: page-about
 	* None
 	* 2014-01-13 ~ 2015-12-15
 	
-	#### 工作簡介
+	### 工作簡介
 	    - 開發遊戲伺服器機制
     	- 部署遊戲伺服器
     	- 維護遊戲伺服器
@@ -48,7 +48,7 @@ key: page-about
 	*  [網址](http://mo.lager.com.tw/)
 	*  2010-06-01 ~ 2014-01-10
 	
-	#### 工作簡介
+	### 工作簡介
 	    - 開發天外2伺服器
     	- 維護天外伺服器(每周)
 
