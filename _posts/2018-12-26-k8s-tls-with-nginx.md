@@ -1,6 +1,7 @@
 ---
 title: [Kubernetes]TLS with nginx
 key: 20181226
+layout: post
 tags: Kubernetes k8s nginx ssl tls 
 ---
 最近在弄SSL相關的東西，用K8S在設定上相對麻煩很多，當初在用Docker的時候真的是簡單到不行
