@@ -10,7 +10,7 @@ text_skin: forest # "default" (default), "dark", "forest", "ocean", "chocolate",
 highlight_theme: tomorrow # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url: https://tingshung.github.io
 baseurl: '/'
-title: 范特西的電子看板
+title: 范特西的電子看板 Fantasy's fantasy world
 description: > #this means to ignore newlines until "nav_lists:"
   Fantasy's Blog
 
