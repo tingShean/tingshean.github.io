@@ -1,8 +1,5 @@
 ---
-layout: post
-title:  "[Kubernetes]TLS with nginx"
-date:   2018-12-26 20:00:00 +0800
-category: blog
+title: [Kubernetes]TLS with nginx
 key: 20181226
 tags: Kubernetes k8s nginx ssl tls 
 ---
