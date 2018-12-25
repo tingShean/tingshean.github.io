@@ -1,5 +1,5 @@
 ---
-title: [Kubernetes]gitea+Nginx+certbot
+title: "[Kubernetes]gitea+Nginx+certbot"
 tags: kubernetes kubectl gitea nginx ssl certbot blog 
 layout: article
 key: 20171113

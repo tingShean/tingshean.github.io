@@ -1,5 +1,5 @@
 ---
-title: [Kubernetes]TLS with nginx
+title: "[Kubernetes]TLS with nginx"
 key: 20181226
 layout: post
 tags: Kubernetes k8s nginx ssl tls 
