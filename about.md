@@ -14,12 +14,11 @@ key: page-about
 	* 職稱 Back-end Engineer Sr.
 	* [網址](https://www.koodata.com.tw/)
 	* 2017-10-03 ~ 至今
-	
-	#### 工作簡介
-	    - 開發Kooads web server, Vivido 管理後台
-	    - 導入Docker以及Kubernetes
-	    - 使用Google Sources Repositories(GSR) Build Front-end and Back-end Dockerfile
-	    - 規劃部署GCP伺服器
+	* 工作簡介
+	    > - 開發Kooads web server, Vivido 管理後台
+	    > - 導入Docker以及Kubernetes
+	    > - 使用Google Sources Repositories(GSR) Build Front-end and Back-end Dockerfile
+	    > - 規劃部署GCP伺服器
 
 * ### Wogogo
 	* 職稱 Back-end Engineer Sr.
