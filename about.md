@@ -1,6 +1,5 @@
 ---
-layout: page
-title: About
+layout: About
 key: page-about
 ---
 # 殷挺翔
