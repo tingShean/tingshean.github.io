@@ -1,5 +1,6 @@
 ---
-layout: About
+layout: page
+title: About
 key: page-about
 ---
 # 殷挺翔
@@ -10,8 +11,8 @@ key: page-about
 
 ## 工作經歷
 * ### KooData
-	* 職稱 Back-end Engineer Sr.
-	* [網址](https://www.koodata.com.tw/)
+	* Back-end Engineer Sr.
+	* [Web site](https://www.koodata.com.tw/)
 	* 2017-10-03 ~ 至今
 	    * 工作簡介
 	    * 開發Kooads web server, Vivido 管理後台, 改善部署金流伺服器
@@ -21,8 +22,8 @@ key: page-about
 	    * 使用K8s Cronjob with Golang
 
 * ### Wogogo
-	* 職稱 Back-end Engineer Sr.
-	* [網址](https://www.wogogo.com/)
+	* Back-end Engineer Sr.
+	* [Web site](https://www.wogogo.com/)
 	* 2016-11-15 ~ 2017-08-25
 	    * 工作簡介
 	    * 開發網站(web server)以及管理後台(server)
@@ -42,12 +43,11 @@ key: page-about
 
 * ### Lager 雷爵網絡
 	*  Server-side Engineer
-	*  [網址](http://mo.lager.com.tw/)
+	*  [Web site](http://mo.lager.com.tw/)
 	*  2010-06-01 ~ 2014-01-10
-	
-	### 工作簡介
-	    - 開發天外2伺服器
-    	- 維護天外伺服器(每周)
+	    * 工作簡介
+	    * 開發天外2伺服器
+    	* 維護天外伺服器(每周)
 
 ## Education
     * 中國文化大學(Chinese Culture University)

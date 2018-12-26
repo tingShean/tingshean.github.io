@@ -14,9 +14,9 @@ title: 范特西的電子看板 Fantasy's fantasy world
 description: > #this means to ignore newlines until "nav_lists:"
   Fantasy's Blog
 
-nav_lists:
-  - title: About
-    url: /about.html
+#nav_lists:
+#  - title: About
+#    url: /about.html
 
 ## GitHub repository (if the site is hosted by GitHub) ##
 repository: tingShean/tingshean.github.io # e.g. someone.github.io
