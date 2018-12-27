@@ -11,9 +11,11 @@ key: page-about
 
 ## 工作經歷
 ### KooData
-- Back-end Engineer Sr.
+- Title
+    - Back-end Engineer Sr.
 - [Web site](https://www.koodata.com.tw/)
-- 2017-10-03 ~ 至今
+- Term of office
+    - 2017-10-03 ~ 至今
 - 工作簡介
     - 開發Kooads web server, Vivido 管理後台, 改善部署金流伺服器
     - 導入Docker以及Kubernetes
@@ -22,9 +24,11 @@ key: page-about
     - 使用K8s Cronjob with Golang
 
 ### Wogogo
-- Back-end Engineer Sr.
+- Title
+    - Back-end Engineer Sr.
 - [Web site](https://www.wogogo.com/)
-- 2016-11-15 ~ 2017-08-25
+- Term of office
+    - 2016-11-15 ~ 2017-08-25
 - 工作簡介
     - 開發網站(web server)以及管理後台(server)
     - 導入Docker以及自動化git
@@ -32,9 +36,10 @@ key: page-about
     - 規劃部署AWS伺服器
 
 ### Ark移動方舟
-- Server-side Engineer
-- None
-- 2014-01-13 ~ 2015-12-15
+- Title
+    - Server-side Engineer
+- Term of office
+    - 2014-01-13 ~ 2015-12-15
 - 工作簡介
     - 開發遊戲伺服器機制
     - 部署遊戲伺服器
@@ -42,9 +47,11 @@ key: page-about
     - 設定遊戲伺服器
 
 ### Lager 雷爵網絡
--  Server-side Engineer
--  [Web site](http://mo.lager.com.tw/)
--  2010-06-01 ~ 2014-01-10
+- Title
+    - Server-side Engineer
+- [Web site](http://mo.lager.com.tw/)
+- Term of office
+    - 2010-06-01 ~ 2014-01-10
 - 工作簡介
     - 開發天外2伺服器
     - 維護天外伺服器(每周)
