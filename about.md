@@ -15,7 +15,7 @@ key: page-about
     - Back-end Engineer Sr.
 - [Web site](https://www.koodata.com.tw/)
 - Term of office
-    - 2017-10-03 ~ 至今
+    - 2017-10-03 ~ 迄今
 - 工作簡介
     - 開發Kooads web server, Vivido 管理後台, 改善部署金流伺服器
     - 導入Docker以及Kubernetes
