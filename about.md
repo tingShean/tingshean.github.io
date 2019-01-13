@@ -30,10 +30,21 @@ key: page-about
 - Term of office
     - 2016-11-15 ~ 2017-08-25
 - 工作簡介
-    - 開發網站(web server)以及管理後台(server)
+    - 使用 PHP 開發網站(web server)以及管理後台(server)
     - 導入Docker以及自動化git
     - Build Front-end and Back-end Dockerfile
     - 規劃部署AWS伺服器
+    - 串接 Paypal
+
+### 空檔自修
+- time
+    - 2015-12-16 ~ 2016-11-14
+- 主要內容
+    - 學習使用 Docker 於專案應用層面
+    - 學習 Kubernetes 架構
+    - 學習 Python、Golang
+    - 學習將 NMP(Nginx、MySQL、PHP) 開發環境建置於 Docker
+    - 學習編寫最小化 Dockerfile
 
 ### Ark移動方舟
 - Title
@@ -41,10 +52,10 @@ key: page-about
 - Term of office
     - 2014-01-13 ~ 2015-12-15
 - 工作簡介
-    - 開發遊戲伺服器機制
-    - 部署遊戲伺服器
-    - 維護遊戲伺服器
-    - 設定遊戲伺服器
+    - 開發遊戲伺服器機制 (PHP)
+    - 部署遊戲伺服器 (AWS)
+    - 維護/更新遊戲伺服器
+    - 設定安裝遊戲伺服器
 
 ### Lager 雷爵網絡
 - Title
@@ -53,8 +64,8 @@ key: page-about
 - Term of office
     - 2010-06-01 ~ 2014-01-10
 - 工作簡介
-    - 開發天外2伺服器
-    - 維護天外伺服器(每周)
+    - 開發遊戲機制 (LPC)
+    - 維護/更新遊戲伺服器 (每周)
 
 ## Education
     中國文化大學(Chinese Culture University)
