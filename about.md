@@ -22,6 +22,8 @@ key: page-about
     - 使用Google Sources Repositories(GSR) Build Front-end and Back-end Dockerfile
     - 規劃部署GCP伺服器(CI/CD use Google Cloud Build)
     - 使用K8s Cronjob with Golang
+    - 設定 K8S SSL
+    - 規劃改善專案 Loading 流程
 
 ### Wogogo
 - Title
@@ -51,6 +53,8 @@ key: page-about
     - Server-side Engineer
 - Term of office
     - 2014-01-13 ~ 2015-12-15
+- 簡述
+    > 參與遊戲開發製作(使用PHP)並維護營運中的遊戲伺服器(代理商用EC2)
 - 工作簡介
     - 開發遊戲伺服器機制 (PHP)
     - 部署遊戲伺服器 (AWS)
@@ -63,6 +67,8 @@ key: page-about
 - [Web site](http://mo.lager.com.tw/)
 - Term of office
     - 2010-06-01 ~ 2014-01-10
+- 簡述
+    > 參與遊戲開發製作(使用LPC)並維護營運中的遊戲伺服器(台港)
 - 工作簡介
     - 開發遊戲機制 (LPC)
     - 維護/更新遊戲伺服器 (每周)
