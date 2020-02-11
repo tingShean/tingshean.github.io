@@ -30,7 +30,7 @@ key: page-about
     - Back-end Engineer Sr.
 - [Web site](https://www.koodata.com.tw/)
 - Term of office
-    - 2017-10-03 ~ 2018-08-31
+    - 2017-10-03 ~ 2019-08-31
 
 ### Wogogo
 - Title
