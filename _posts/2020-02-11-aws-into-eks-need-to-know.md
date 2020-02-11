@@ -15,6 +15,7 @@ tags: aws eks k8s eksctl
 但是關關難過關關過，既然是全雲端服務裡擁有最多服務的雲端公司 ~~公三小~~
 
 沒道理一堆前輩、大神們待的公司都在用，然後我沒辦法用。
+
 <!--more-->
 
 後來翻了很多github上的issue討論，以及試了很多種方法
@@ -23,7 +24,7 @@ tags: aws eks k8s eksctl
 
 然後錯誤是以下圖片這類的時候，應該有八七趴都是權限的問題
 
-![eksctl image error 1](assets/images/eksctl-role-error.png)
+![eksctl image error 1](/assets/images/eksctl-role-error.png)
 
 找到的相關解決法方就是讓你當前使用指令的帳號有各種相關權限
 
