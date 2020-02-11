@@ -23,15 +23,14 @@ tags: aws eks k8s eksctl
 
 然後錯誤是以下圖片這類的時候，應該有八七趴都是權限的問題
 
-![eksctl image error 1]
-(/assets/images/eksctl-role-error.png)
+![eksctl image error 1](assets/images/eksctl-role-error.png)
 
 找到的相關解決法方就是讓你當前使用指令的帳號有各種相關權限
 
 因為牽扯的相關權限蠻多的，所以我是建議管理一種權限就建立一個政策，最後再綁進你使用指令的帳號上就好
 
 ## 相關權限如下(直接建政策後用JSON編輯儲存)
-{% highlight shell %}
+{% highlight json %}
 {
     "Version": "2012-10-17",
     "Statement": [
