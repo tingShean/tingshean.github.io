@@ -46,7 +46,7 @@ tags: ansible docker_compose
 ```
 
 
-執行到這直接也跟你說不給裝，後來去爬文是少了兩個套件，直接加上去吧，我不知道為啥沒有`gcc`...
+執行到這直接也跟你說不給裝，後來去爬文是少了兩個套件，直接加上去吧，原來一開始就沒有`gcc`...
 ``` yml
 - name: yum install python-pip
   become: yes
@@ -85,3 +85,5 @@ tags: ansible docker_compose
 [安裝pip](https://ansible.tw/#!docs/installation.md)
 [Ansible dnf python3 is not working with Centos 7](https://github.com/ansible/ansible/issues/67083)
 [Docker fails to create network bridge on start up](https://github.com/moby/moby/issues/18113)
+[Ansible docker_compose](https://docs.ansible.com/ansible/latest/modules/docker_compose_module.html)
+[Ansible docker_container](https://docs.ansible.com/ansible/latest/modules/docker_container_module.html)
