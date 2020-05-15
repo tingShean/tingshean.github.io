@@ -20,6 +20,7 @@ tags: ansible docker_compose
 ## 回到正題
 
 第一個要注意的是，使用ansible內docker和docker_compose這兩個module的時候，要安裝的東西不是`yum install`的`docker`，而是`pip install docker docker-compose` ~~(然後就會踩到一連串的坑，如果你也用Centos7)~~
+
 	>會這樣做的原因只是為了讓ansible可以接到CI/CD的變數，所以直接使用內建的module，才會接到外部進來的變數
 
 接下來當你改成
@@ -85,7 +86,11 @@ tags: ansible docker_compose
 
 
 [安裝pip](https://ansible.tw/#!docs/installation.md)
+
 [Ansible dnf python3 is not working with Centos 7](https://github.com/ansible/ansible/issues/67083)
+
 [Docker fails to create network bridge on start up](https://github.com/moby/moby/issues/18113)
+
 [Ansible docker_compose](https://docs.ansible.com/ansible/latest/modules/docker_compose_module.html)
+
 [Ansible docker_container](https://docs.ansible.com/ansible/latest/modules/docker_container_module.html)
