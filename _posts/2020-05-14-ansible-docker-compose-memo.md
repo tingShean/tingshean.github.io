@@ -20,7 +20,7 @@ tags: ansible docker_compose
 ## 回到正題
 
 第一個要注意的是，使用ansible內docker和docker_compose這兩個module的時候，要安裝的東西不是`yum install`的`docker`，而是`pip install docker docker-compose` ~~(然後就會踩到一連串的坑，如果你也用Centos7)~~
-	會這樣做的原因只是為了讓ansible可以接到CI/CD的變數，所以直接使用內建的module，才會接到外部進來的變數
+	>會這樣做的原因只是為了讓ansible可以接到CI/CD的變數，所以直接使用內建的module，才會接到外部進來的變數
 
 接下來當你改成
 ``` yml
@@ -67,7 +67,9 @@ tags: ansible docker_compose
 
 
 以為沒事了嗎？接著我想把`templates`加進去，省得一些設定的東西我得每個server都一份，然後又出事了；使用python3的時候會噴權限問題，但問題是我已經把資料夾的權限改好了~~你他○的是有三小問題~~，他上面會顯示
+
 `"msg": "Aborting, target uses selinux but python bindings (libselinux-python) aren't installed!`
+
 然後你跟著裝就完了，這個是在使用python3才會遇到的問題，你會想說那我就直接安裝就好啦，抱歉，python3無法使用`yum`跑腳本，所以請你改成`dnf`，然後你改成`dnf`後他就會跟你說無法使用`dnf`~~(無限公三小)~~，接著我想說先用`python2`裝好這完意行不行；抱歉，一樣不行。最後我是找到開發人員在github上的回覆，有想了解的可以點下面的連結過去。
 
 
