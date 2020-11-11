@@ -16,7 +16,7 @@ tags: firefox MOZILLA_PKIX_ERROR_REQUIRED_TLS_FEATURE_MISSING tls letsencrypt ng
 大多數遇到的問題網頁都是使用了Let's Encrypt的TLS，我個人一開始推測應該是因為Firefox的安全性要求比較高產生的影響。
 
 ## 找出原因
-[<官方討論區>HTTPS connection fails with "MOZILLA_PKIX_ERROR_REQUIRED_TLS_FEATURE_MISSING"](https://support.mozilla.org/en-US/questions/1149911)
+[HTTPS connection fails with "MOZILLA_PKIX_ERROR_REQUIRED_TLS_FEATURE_MISSING"](https://support.mozilla.org/en-US/questions/1149911)
 
 雖然是距今4年前的討論，不過這代表是以前就發生這問題了，不是現在才有，然後下面有回文叫人把`enable_ocsp_must_staple`這個關掉後強制重整 ~~你乾脆叫使用者重灌好了~~
 
