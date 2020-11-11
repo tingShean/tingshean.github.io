@@ -45,7 +45,11 @@ resolver_timeout 5s;
 
 ## 相關出處
 [HTTPS connection fails with "MOZILLA_PKIX_ERROR_REQUIRED_TLS_FEATURE_MISSING"](https://support.mozilla.org/en-US/questions/1149911)
+
 [ssl_stapling](http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_stapling)
+
 [ssl_stapling_verify](http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_stapling_verify)
+
 [resolver](http://nginx.org/en/docs/http/ngx_http_core_module.html#resolver)
+
 [resolver_timeout](http://nginx.org/en/docs/http/ngx_http_core_module.html#resolver_timeout)
