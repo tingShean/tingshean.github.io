@@ -72,5 +72,6 @@ tags: k8s kubernetes helm3
 
 這次的學習沒有花很多時間在繞路也是好事，也可能這部份真的太淺就沒人分享，不過這邊還是記錄一下比較安心點，之後就要來改寫template
 
---
+
+
 [Helm 官方文件](https://helm.sh/docs/intro/using_helm/)
