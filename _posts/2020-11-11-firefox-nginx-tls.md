@@ -53,3 +53,5 @@ resolver_timeout 5s;
 [resolver](http://nginx.org/en/docs/http/ngx_http_core_module.html#resolver)
 
 [resolver_timeout](http://nginx.org/en/docs/http/ngx_http_core_module.html#resolver_timeout)
+
+[OCSP must staple nginx configuration](https://forum.netgate.com/topic/129063/ocsp-must-staple-nginx-configuration/2)
