@@ -63,7 +63,7 @@ stringData:
 
 
 ## 結語
-要改的東西真的不多，主要是`provider`和`aws IAM`對應的部份要對，再來就是這個東西不能跨`namespace`，也就是你一個`namespace`就要建一次traefik，所以我才會只拿來放小東西就好。
+要改的東西真的不多，主要是`provider`和`aws IAM`對應的部份要對，~~再來就是這個東西不能跨`namespace`，也就是你一個`namespace`就要建一次traefik，所以我才會只拿來放小東西就好。~~如果要新增網域之類的，只需新增`IngressRoute`就可以了，很意外的`traefik`可以跨`namespace` **update 20201214**
 
 --
 ## 參考資料
