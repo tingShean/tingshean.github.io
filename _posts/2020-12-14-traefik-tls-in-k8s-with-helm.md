@@ -67,6 +67,7 @@ podSecurityContext:
 [permissions 660 for /data/acme.json are too open, please use 600 #164](https://github.com/traefik/traefik-helm-chart/issues/164)
 
 以下letsencrypt官方討論，可以看一下怎麼查自己domain申請的數量
+
 [letsencrypt官方討論](https://community.letsencrypt.org/t/too-many-certificates-already-issued-for-domain/79066/3)
 
 [Let's Debug Toolkit](https://tools.letsdebug.net/cert-search)
