@@ -27,14 +27,22 @@ tags: kubernetes k8s docker-shim cri-o containerd
 
 ## 開始踩坑 - containerd
 
-在照著文章一步一步走的同時就可以知道有些元件是可以抽換的，不過今天是在練習換`oci`，照著文章走第一個會先遇到的就是`ansible`我的版本過新而`playbook`的寫法過舊的問題，其實照著上面的`error`就可以知道了，改成新的格式就可以了，這邊的問題不大。接著安裝好後進機器內下指令就會踩到第二個坑，在安裝`kube-flannel`的時候因為版本的問題，所以我換成`https://raw.githubusercontent.com/coreos/flannel/d943e2c8b3d26f22e95940db28000933d5d140e0/Documentation/kube-flannel.yml`，到這邊就結束了，可能因為是新的安裝所以相對問題不大。
+在照著文章一步一步走的同時就可以知道有些元件是可以抽換的，不過今天是在練習換`oci`，照著文章走第一個會先遇到的就是`ansible`我的版本過新而`playbook`的寫法過舊的問題，其實照著上面的`error`就可以知道了，改成新的格式就可以了，這邊的問題不大。接著安裝好後進機器內下指令就會踩到第二個坑，在安裝`kube-flannel`的時候因為版本的問題，所以我換成
+
+`https://raw.githubusercontent.com/coreos/flannel/d943e2c8b3d26f22e95940db28000933d5d140e0/Documentation/kube-flannel.yml`
+
+到這邊就結束了，可能因為是新的安裝所以相對問題不大。
 
 後來想想目前`cncf`比較推的流程以及也是大神的解釋，我想說來試試替換掉這個`containerd`會有多困難~~然後就踩了更大的坑~~
 
 
 ## 開始踩坑 - CRI-O
 
-一開始也是直接照著文章做，雖然這次面向不同的是在機器內，`ansible`安裝套件這段就可以跳過了因為剛剛已經做過，不過記得要裝`CRI-O`，然後在裝完啟動的時候就出事了，如文章所說的少了個link，但事情沒這麼簡單，這邊我踩了另一個坑，[相關討論](https://github.com/cri-o/cri-o/issues/2903)在裡面，我不知道原來安裝套件也會跟別人安裝的結果不一樣，照著討論裡的指令下`sudo sed 's|/usr/libexec/crio/conmon|/usr/bin/conmon|' -i /etc/crio/crio.conf`就可以，不過我還是有先進去這個檔案看是不是真的有這行，以及要替換的`cmd`是不是真的在`/usr/bin/`，加完link再替換掉這行後就可以啟動了，但是我的k8s現在是啟動的狀態，所以我先下了`kubaadm reset`，然後在重啟的時候因為你的`cri`有兩個，所以在啟動的時候他會跟你說你得選擇使用哪一個`cri`。
+一開始也是直接照著文章做，雖然這次面向不同的是在機器內，`ansible`安裝套件這段就可以跳過了因為剛剛已經做過，不過記得要裝`CRI-O`，然後在裝完啟動的時候就出事了，如文章所說的少了個link，但事情沒這麼簡單，這邊我踩了另一個坑，[相關討論](https://github.com/cri-o/cri-o/issues/2903)在裡面，我不知道原來安裝套件也會跟別人安裝的結果不一樣，照著討論裡的指令下
+
+`sudo sed 's|/usr/libexec/crio/conmon|/usr/bin/conmon|' -i /etc/crio/crio.conf`
+
+不過我還是有先進去這個檔案看是不是真的有這行，以及要替換的`cmd`是不是真的在`/usr/bin/`，加完link再替換掉這行後就可以啟動了，但是我的`k8s`現在是啟動的狀態，所以我先下了`kubeadm reset`，然後在重啟的時候因為你的`cri`有兩個，所以在啟動的時候他會跟你說你得選擇使用哪一個`cri`。
 
 `sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --cri-socket /var/run/crio/crio.sock`
 
