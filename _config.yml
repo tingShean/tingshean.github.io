@@ -46,7 +46,12 @@ comments:
     shortname:  tingshung-github-io #the Disqus shortname for the site
 
 ## Google Analytics ##
-ga_tracking_id: UA-8994927-6 #Google analytics id for the site
+# ga_tracking_id: UA-8994927-6 #Google analytics id for the site
+analytics:
+  provider: google
+  google:
+    tracking_id: "UA-8994927-6"
+    anonymize_ip: true
 
 ## Reading quantity (LeanCloud) ##
 leancloud:
