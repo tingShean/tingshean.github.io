@@ -2,7 +2,7 @@
 title: "[CICD]Tekton in k8s 的第一步"
 key: 20210426
 layout: article
-tags: tekton k8s
+tags: cicd tekton k8s
 ---
 
 ## 前言

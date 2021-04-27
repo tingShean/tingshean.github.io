@@ -2,7 +2,7 @@
 title: "[CICD]Tekton in k8s trigger"
 key: 20210427
 layout: article
-tags: tekton k8s trigger eventlist
+tags: cicd tekton k8s trigger eventlist triggertemplate triggerbinding trigger
 ---
 
 ## 前言
@@ -38,5 +38,7 @@ Eventlistener > TriggerBinding > TriggerTemplate.
 ## 參考資料
 
 [pipeline](https://github.com/tektoncd/pipeline)
+
 [tekton catalog](https://github.com/tektoncd/catalog/tree/main/task)
+
 [tekton trigger](https://github.com/tektoncd/triggers/blob/main/docs/eventlisteners.md#multiple-eventlisteners-one-eventlistener-per-namespace)
