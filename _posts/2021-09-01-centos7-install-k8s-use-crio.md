@@ -1,5 +1,5 @@
 ---
-title: "[心得]Centos7 + kubeadm + CRI-O"
+title: "[心得]自架K8S(Centos7 + kubeadm + CRI-O)"
 key: 20210901
 layout: article
 tags: k8s kubeadm kubelet crio no-docker
