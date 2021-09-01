@@ -107,7 +107,7 @@ kubernetes在`1.14.2`左右的時候有更動設定檔的位置 [出處](https:/
 
         sudo vim /etc/hosts
 
-6. 啟動`kubelet`和`kubeadm`，啟動`kubeadm`的時候一定會出錯，但是要靠他產幾個檔出來並更改，所以接著到後面再修正就好
+6. 啟動`kubeadm`這邊一定會出錯，但是要靠他產幾個檔出來並更改，所以接著到後面再修正就好
 
 
 ## 更改相關設定 containerd.sock > crio.sock
@@ -129,18 +129,18 @@ kubernetes在`1.14.2`左右的時候有更動設定檔的位置 [出處](https:/
         # vim /usr/lib/systemd/system/kubelet.service.d/10-kubeadm.conf
         加上 `--cgroup-driver=cgroupfs`
 
-2. 新增kubeadm環境變數
+2. 新增`kubeadm`環境變數
 
         # vim /var/lib/kubelet/kubeadm-flags.env
         最後面加上 `--cgroup-driver=cgroupfs`
 
-3. 修改cri-o的配置檔
+3. 修改`cri-o`的配置檔
 
         # vim /etc/crio/crio.conf
         找到 `cgroup_manager` 把 "systemd" 改成 "cgroupfs"
         找到 `conmon_manager` 改成 "pod"
 
-4. 重新載入systemd daemon並重啟服務
+4. 重新載入`systemd daemon`並重啟服務
 
         # systemctl daemon-reload
         # systemctl restart crio
@@ -148,12 +148,20 @@ kubernetes在`1.14.2`左右的時候有更動設定檔的位置 [出處](https:/
 
 
 ## 收尾
-```shell
-mkdir -p $HOME/.kube
-sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-sudo chown $(id -u):$(id -g) $HOME/.kube/config
-```
+1. 把config複製到user的home資料夾下
 
+    ```shell
+    mkdir -p $HOME/.kube
+    sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+    sudo chown $(id -u):$(id -g) $HOME/.kube/config
+    ```
+
+2. `kubectl get all`看到下面這就代表K8s的master起來了
+
+    ```shell
+    NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+    service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   82m
+    ```
 
 
 ## 附註：設定開啟NET_RAW(如果要使用busybox的ping相關功能就要先開)
