@@ -37,7 +37,7 @@ tags: jjb jenkinsjobbuilder jenkins
 官網上說`~/.config/jenkins_jobs/jenkins_jobs.ini`和`/etc/jenkins_jobs/jenkins_jobs.ini`都可以直接吃到，不需要額外下`--conf`指定。
 
 
-```
+```ini
 [job_builder]
 ignore_cache=True
 keep_descriptions=False
@@ -67,7 +67,7 @@ arg_key=value
 
 先建立你要工作的檔案位置，使用預設的`~/.config/jenkins_jobs/`也行，不過要記住運作的目標都是以資料夾為單位，首先先建立以下範例至`jobs`
 
-```YAML
+```yaml
 - job:
     name: 'my_job'
     description: 'Automatically generated test'
@@ -84,7 +84,7 @@ arg_key=value
 
 在進行到下一個階段前，有個東西要先講一下，就是所謂的模板化，也就是說把大致上的配置和流程都定下來之後，接下來你只需要把對應的值填好就可以爽爽用了，直接看以下範例
 
-```YAML
+```yaml
 - job-template:
     name: '{name}_job'
     description: 'Automatically generated test'
@@ -107,7 +107,7 @@ arg_key=value
 
 直接使用剛剛的範例，但是這次我做了一些些的改變，變數之後加上`|`接著的值就會是`default`
 
-```YAML
+```yaml
 - job-template:
     name: 'my_job'
     description: '{dest|Automatically generated test}'
